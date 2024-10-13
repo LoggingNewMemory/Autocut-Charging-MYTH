@@ -19,5 +19,4 @@ set_perm_recursive $MODPATH 0 0 0755 0644
 set_perm $MODPATH/system/bin/P0 0 0 0755 0755
 set_perm $MODPATH/system/bin/P1 0 0 0755 0755
 
-
-#am start -a android.intent.action.VIEW -d https://t.me/KanagawaLabAnnouncement/74 >/dev/null 2>&1
+am start -a android.intent.action.VIEW -d https://t.me/KanagawaLabAnnouncement/122 >/dev/null 2>&1
