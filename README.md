@@ -1,6 +1,6 @@
 ![Banner](https://github.com/user-attachments/assets/fd03460a-8b6d-4b2b-9235-c3356c0aaed3)
 
-Autocut charging MYTH Version
+Autocut charging MYTH Version <br />
 By: Kanagawa Yamada
 
 Q: What's the different between normal autocut and this one? <br />
