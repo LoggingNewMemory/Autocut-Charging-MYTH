@@ -4,6 +4,9 @@
     buffer:          .skip 16
     one:            .string "1"
     zero:           .string "0"
+    timespec:
+        tv_sec:     .quad 1800     // 30 minutes = 1800 seconds
+        tv_nsec:    .quad 0        // nanoseconds
 
 .section .text
 .global main
@@ -88,6 +91,12 @@ main:
     // Close charger file
     mov x0, x19
     mov x8, #57                   // close syscall
+    svc #0
+    
+    // Sleep for 30 minutes
+    adr x0, timespec             // First timespec struct (request)
+    add x1, x0, #0              // Second timespec struct (remaining, can be same)
+    mov x8, #101                // nanosleep syscall
     svc #0
     
     b 1b                          // Loop back
