@@ -23,4 +23,4 @@ unzip -o "$ZIPFILE" 'acut64' -d $MODPATH/system/bin >&2
 set_perm_recursive $MODPATH 0 0 0755 0644
 set_perm $MODPATH/system/bin/acut64 0 0 0755 0755
 
-am start -a android.intent.action.VIEW -d https://t.me/KanagawaLabAnnouncement/336 >/dev/null 2>&1
+am start -a android.intent.action.VIEW -d https://t.me/KanagawaLabAnnouncement/339 >/dev/null 2>&1
